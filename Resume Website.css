@@ -1,0 +1,588 @@
+:root {
+    --primary-color: #d4eaf7;
+    --secondary-color: #183e4b;
+    --complimentary-color: #a2d2e6;
+    --contrast-color: #6eb6c4;
+    --light-color: #dad8d8a2;
+    --container-color: #fffefb;
+    --base-text-color: black;
+    --border-color1: black;
+    --border-color2: white;
+    --border-color3: #183e4b;
+}
+
+.top-nav {
+    width: 100%;
+    max-width: 1157px;
+    height: 60px;
+    margin-top: 15px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid var(--border-color1);
+}
+
+.top-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.top-nav ul li {
+    margin: 15px;
+}
+
+.top-nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px 0;
+    display: block;
+    font-size: 18px;
+}
+
+.top-nav ul li a:hover {
+    color: var(--complimentary-color);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 70px;
+    padding: 0;
+    line-height: normal;
+    background-color: var(--light-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+/* This is for the Welcome page css details */
+.welcome-parent {
+    background-color: var(--container-color);
+    color: var(--base-text-color);
+    max-width: 1158px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Allows the content to wrap in smaller screens */
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto;
+    border: 2px solid var(--border-color1);
+    padding-bottom: 20px;
+}
+
+.welcome-section-title {
+    color: #1f4e5c;
+    font-size: 30px;
+    background-color: #1f4e5c4e;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.cover-letter {
+    display: flex;
+    flex-wrap: wrap; /* Allows the content to wrap in smaller screens */
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Make sure it takes up the full width */
+}
+
+.cover-letter-details {
+    flex: 1;
+    min-width: 200px;
+    max-width: 600px;
+    text-align: left;
+}
+
+.cover-letter-content{
+    text-align: justify;
+}
+
+.welcome-img {
+    margin-right: 0px;
+    display: flex;
+}
+
+.welcome-image {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    border: 2.5px solid var(--border-color3);
+}
+
+.welcome-name-container {
+    margin-top: 30px;
+    flex: 1; /* Allows the container to take available space */
+    width: 100%; /* Ensures it takes the full width */
+    text-align: center;
+    line-height: 15px; 
+    color: var(--border-color1);
+}
+
+.welcome-contact-container {
+    margin-top: 10px; /* Adjust top margin for better spacing */
+    width: 100%; /* Ensures it takes the full width */
+    line-height: 15px;
+}
+
+.welcome-contact-container a {
+    text-decoration: none;
+    color: var(--secondary-color); /* LinkedIn color */
+}
+
+.welcome-contact-container a:hover {
+    text-decoration: none;
+    color: var(--contrast-color); /* LinkedIn color */
+}
+
+.welcome-title {
+    color: var(--secondary-color);
+}
+
+i {
+    margin: 10px;
+}
+.social-media{
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.icon-title {
+    color: #183e4b;
+}
+
+
+
+/* This is for the Resume css details */
+.resume-parent {
+    display: flex;
+    flex-wrap: wrap; /* Allows the content to wrap in smaller screens */
+    width: 100%;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.left-side {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding is included in the total width */
+    min-width: 300px; /* Ensures columns don't get too narrow */
+    max-width: 580px; /* Ensures columns don't get too narrow */
+    border: 2px solid var(--border-color1);
+}
+
+.right-side {
+    background-color: var(--container-color);
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding is included in the total width */
+    min-width: 300px; /* Ensures columns don't get too narrow */
+    max-width: 580px; /* Ensures columns don't get too narrow */
+    border: solid var(--border-color1);    
+    border: 2px solid var(--border-color1);
+    
+}
+
+.left-header {
+    text-align: center;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap; /* Allows the image and text to wrap in smaller screens */
+    width: 100%;
+    justify-content: center;
+}
+
+.img-container {
+    margin-right: 20px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    border: 2.5px solid var(--border-color2);
+}
+
+.name-container {
+    margin-top: 10px;
+    flex: 1; /* Allows the container to take available space */
+    width: 100%; /* Ensures it takes the full width */
+}
+
+.title{color: var(--light-color);}
+
+.contact-container {
+    margin-top: 10px; /* Adjust top margin for better spacing */
+    width: 100%; /* Ensures it takes the full width */
+    line-height: 15px;
+}
+
+.contact-container a {
+    text-decoration: none;
+    color: var(--complimentary-color); /* LinkedIn color */
+}
+
+.contact-container a:hover {
+    text-decoration: none;
+    color: var(--contrast-color); /* LinkedIn color */
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows the skills to wrap in smaller screens */
+}
+
+.skills-column {
+    flex: 1;
+    min-width: 100px; /* Ensures columns don't get too narrow */
+}
+
+.connect-form {
+    margin-top: 20px;
+}
+
+form label {
+    margin-bottom: 10px;
+}
+
+form textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    color: #1f4e5c;
+}
+
+.portfolio-content{
+    padding-left: 20px;
+}
+
+
+
+/* This is for the Portfolio page css details */
+.portfolio-parent {
+    background-color: var(--container-color);
+    color: var(--base-text-color);
+    width: 100%;
+    max-width: 1158px;
+    display: flex;
+    flex-wrap: wrap; /* Allows the content to wrap in smaller screens */
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto;
+    border: 2px solid var(--border-color1);
+    padding-bottom: 20px;
+}
+
+.portfolio-section-title {
+    color: #1f4e5c;
+    text-align: center;
+}
+
+.project-image{
+    max-width:883px;
+    max-height:500px;
+}
+
+.wrap-collapsibles {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the collapsible buttons */
+    width: 100%;
+}
+
+.wrap-collapsible {
+    margin-bottom: 1.2rem;
+    width: 80%; /* Ensures the button takes up 80% of the container */
+    max-width: 1000px; /* Max width to prevent it from being too wide */
+}
+
+input[type='checkbox'] {
+    display: none;
+}
+
+.lbl-toggle {
+    display: block;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    color: #183e4be6;
+    background: #cfcfcfb6;
+    opacity: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.25s ease-out;
+}
+
+.lbl-toggle:hover {
+    color: var(--border-color2);
+    background: #183e4be6;
+}
+
+
+.lbl-toggle::before {
+    content: ' ';
+    display: inline-block;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid currentColor;
+    vertical-align: middle;
+    margin-right: .7rem;
+    transform: translateY(-2px);
+    transition: transform .2s ease-out;
+}
+
+.toggle:checked + .lbl-toggle::before {
+    transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+    width: 100%; /* Ensure the content takes up the full width of the collapsible button */
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+    max-height: 800px; /* Set a fixed height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.toggle:checked + .lbl-toggle {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.collapsible-content .content-inner {
+    background:#cfcfcf47;
+    border-bottom: 3px solid #183e4b;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: .5rem 1rem;
+    padding-bottom: 20px;
+    box-sizing: border-box; /* Ensures padding is included in the total width */
+}
+
+
+/*This for other css details*/
+
+
+button {
+    background-color: #a2d2e6;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6eb6c4;
+}
+
+a {
+    color: var(--secondary-color);
+    font-weight:750px;
+    text-decoration: none;
+}
+a:hover {
+    color: #528893;
+}
+
+.website-credit{
+    font-size: small;
+}
+
+
+/* Media Queries for different screen sizes */
+
+/* Mobile devices (portrait and landscape) */
+@media (max-width: 768px) {
+    .resume-parent {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .header-container {
+        flex-direction: column; /* Stacks the image and text vertically */
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-container {
+        text-align: center; /* Center aligns contact info */
+    }
+
+    /* Ensure the parent section also adjusts to the screen width */
+    .left-side, .right-side {
+    width: 100%;
+    padding: 20px;
+    }
+
+ /* Ensure navigation bar and parent section take up full width */
+ nav {
+    width: 100%;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+
+/* Center the navigation links */
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+}
+.project-image {
+    max-width: 100%;
+    height: auto;
+}
+
+}
+
+/* Tablets and small desktops */
+@media (min-width: 1500px) {
+    .header-container {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        margin-left: auto;
+    }
+
+    .img-container{
+        max-width: 230px;
+        max-height: 230px;
+        margin-left: 20px;
+    }
+
+    .contact-container {
+        text-align: center;
+    }
+
+}
+
+    /* Ensure the parent section also adjusts to the screen width */
+    .left-side, .right-side {
+        width: 100%;
+        padding: 20px;
+        }
+    
+    
+     /* Ensure navigation bar and parent section take up full width */
+     nav {
+        width: 100%;
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    }
+    
+    
+    /* Center the navigation links */
+    nav ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        list-style: none;
+    }
+    
+    nav ul li {
+        margin: 0 10px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: inherit;
+        padding: 10px;
+    }
+
+
+/* Tablets and small desktops */
+@media (max-width: 980px) {
+    .header-container {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        margin-left: auto;
+    }
+
+    .img-container{
+        max-width: 230px;
+        max-height: 230px;
+        margin-left: 20px;
+    }
+
+    .contact-container {
+        text-align: center;
+    }
+
+}
+
+/* Small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .resume-parent {
+        width: 100%; /* Use full width for small screens */
+        padding: 0px; /* Add padding for small screens */
+    }
+
+    .left-side, .right-side {
+        padding: 10px;
+        min-width: 100%; /* Ensure columns take full width */
+    }
+
+    .header-container {
+        flex-direction: column; /* Stacks the image and text vertically */
+        align-items: center;
+        text-align: center;
+    }
+
+    .img-container {
+        margin-right: 0; /* Remove right margin for small screens */
+        margin-bottom: 10px; /* Add bottom margin for spacing */
+    }
+
+    .contact-container {
+        text-align: center; /* Center aligns contact info */
+    }
+
+    .skills-container {
+        flex-direction: column; /* Stacks the skills vertically */
+    }
+
+    .skills-column {
+        min-width: 100%; /* Ensures columns take full width */
+    }
+}
