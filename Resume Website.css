@@ -574,6 +574,11 @@ nav ul li a {
         margin-bottom: 10px; /* Add bottom margin for spacing */
     }
 
+    .profile-image{
+        margin-right: 35px;
+        margin-top: 10px;
+    }
+
     .contact-container {
         text-align: center; /* Center aligns contact info */
     }
